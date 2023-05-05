@@ -48,6 +48,13 @@ export class PurchaseCreateAdminComponent extends AbstractCreateController<Purch
 }
 
 
+    public save(): void {
+        this.item.image = JSON.stringify(this.fileTempDtosForOne[0]);
+        super.save();
+    }
+
+
+
      preparePurchaseTag(tags: Array<TagDto>): void{
         if( tags != null){
                 tags.forEach(e => {

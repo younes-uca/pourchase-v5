@@ -31,7 +31,7 @@ public class Purchase   extends AuditBusinessObject     {
     @Column(length = 500)
     private String reference;
     private LocalDateTime purchaseDate ;
-    @Column(length = 500)
+    @Column(columnDefinition = "TEXT")
     private String image;
     private BigDecimal total = BigDecimal.ZERO;
     @Column(length = 500)

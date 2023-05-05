@@ -54,6 +54,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {ServiceLocator} from './zynerator/service/ServiceLocator';
 
 
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -89,6 +90,7 @@ imports: [
   AdminModule,
   AdminRoutingModule,
   SelectButtonModule,
+  FileUploadModule,
 
   TranslateModule.forRoot({
   loader: {
